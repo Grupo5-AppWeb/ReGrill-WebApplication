@@ -5,13 +5,28 @@ const router = createRouter({
     history: createWebHistory(),
     routes: [
         {
-            path: '/',
+            path: '/supplier/dashboard',
             component: AppLayout,
             children: [
                 {
-                    path: '/',
+                    path: '/supplier/dashboard',
                     name: 'dashboard',
-                    component: () => import('@/views/Dashboard.vue')
+                    component: () => import('@/public/views/Dashboard.vue')
+                },
+                {
+                    path: '/supplier/orderlist',
+                    name: 'orderlist',
+                    component: () => import('@/suppliers/order-management/order-list/views/OrderList.vue')
+                },
+                {
+                    path:'/supplier/notifications',
+                    name: 'notifications',
+                    component:() => import('@/suppliers/communications/notifications/views/Notifications.vue')
+                },
+                {
+                    path: '/supplier/profile',
+                    name: 'profile',
+                    component: () => import('@/suppliers/user-management/profile/views/SupplierProfile.vue')
                 },
                 {
                     path: '/uikit/formlayout',
@@ -27,11 +42,6 @@ const router = createRouter({
                     path: '/uikit/button',
                     name: 'button',
                     component: () => import('@/views/uikit/ButtonDoc.vue')
-                },
-                {
-                    path: '/uikit/table',
-                    name: 'table',
-                    component: () => import('@/views/uikit/TableDoc.vue')
                 },
                 {
                     path: '/uikit/list',
