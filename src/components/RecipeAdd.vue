@@ -78,7 +78,7 @@ export default {
 
 <style scoped>
 .background-container {
-    background-image: url('../../../../../WebstormProjects/ReGrill-WebApplication/src/assets/noche sangrienta.jpeg');
+    background-image: url('https://www.vivood.com/imagenes/elaboracion-cocina-gourmet.jpg');
     background-size: cover;
     height: 100vh;
     width: 100vw;
