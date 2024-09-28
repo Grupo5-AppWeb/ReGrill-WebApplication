@@ -165,14 +165,17 @@ function getPresetExt() {
     }
 }
 
-function updateColors(type, color) {
+function updateColors(type, colorName) {
     if (type === 'primary') {
-        setPrimary(color.name);
+        // Encuentra el objeto de color 'orange' independientemente del parámetro 'colorName'
+        const orangeColor = primaryColors.value.find(c => c.name === 'orange');
+        setPrimary(orangeColor.name);  // Establece 'orange' como el color primario
+        applyTheme('primary', orangeColor);  // Aplica el tema con el color 'orange'
     } else if (type === 'surface') {
-        setSurface(color.name);
+        const surfaceColor = surfaces.value.find(s => s.name === colorName);
+        setSurface(surfaceColor.name);  // Esto es opcional si no deseas cambiar los colores de superficie
+        applyTheme('surface', surfaceColor);  // Opcional para colores de superficie
     }
-
-    applyTheme(type, color);
 }
 
 function applyTheme(type, color) {
