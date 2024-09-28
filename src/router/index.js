@@ -9,7 +9,7 @@ const router = createRouter({
             component: AppLayout,
             children: [
                 {
-                    path: '/supplier/dashboard',
+                    path: '/',
                     name: 'dashboard',
                     component: () => import('@/public/views/Dashboard.vue')
                 },
