@@ -7,4 +7,8 @@ export class RecetApiService {
     create(data) {
         return http.post(`/recipes`, data);
     }
+
+    getRecipeById(id) {
+        return http.get(`/recipes/${id}`);
+    }
 }

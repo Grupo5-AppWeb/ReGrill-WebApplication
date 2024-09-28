@@ -1,23 +1,6 @@
-<template>
-    <div class="container">
-        <h1>Admi. Kitchen</h1>
-        <h2>Recetas</h2>
-        <button @click="addRecipe(index)" class="action-button">Añadir receta</button>
-        <button @click="deleteRecipe(index)" class="action-button">Eliminar receta</button>
-        <div class="recipe-grid">
-            <div v-for="(recipe, index) in recipes" :key="index" class="recipe-card">
-                <img :src="recipe.image" :alt="recipe.name" class="recipe-image" />
-                <h3>{{ recipe.name }}</h3>
-
-            </div>
-        </div>
-    </div>
-</template>
-
 <script>
-
-import {RecetApiService} from "@/restaurant/service/recet-api.service";
-import {Recipe} from "@/restaurant/model/recet.entity";
+import {RecetApiService} from "@/services/service/recet-api.service";
+import {Recipe} from "@/services/model/recet.entity";
 
 export default {
     data() {
@@ -47,6 +30,24 @@ export default {
 };
 </script>
 
+<template>
+    <div class="container">
+        <h1>Admi. Kitchen</h1>
+        <h2>Recetas</h2>
+        <button @click="addRecipe(index)" class="action-button">Añadir receta</button>
+        <button @click="deleteRecipe(index)" class="action-button">Eliminar receta</button>
+        <div class="recipe-grid">
+            <div v-for="(recipe, index) in recipes" :key="index" class="recipe-card">
+                <router-link :to="{ path: '/recipeView', query: { id: recipe.id } }">
+                    <img :src="recipe.image" :alt="recipe.name" class="recipe-image" />
+                </router-link>
+                <h3>{{ recipe.name }}</h3>
+
+            </div>
+        </div>
+    </div>
+</template>
+
 <style scoped>
 .container {
     text-align: center;
@@ -72,6 +73,7 @@ export default {
     height: 320px;
     width: auto;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .action-button {

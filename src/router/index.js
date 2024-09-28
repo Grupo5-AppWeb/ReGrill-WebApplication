@@ -128,6 +128,16 @@ const router = createRouter({
             component: () => import('@/views/pages/auth/Access.vue')
         },
         {
+          path: '/recipeView',
+          name: 'recipeView',
+          component: () => import('@/components/ViewRecipe.component.vue')
+        },
+        {
+            path: '/recipe',
+            name: 'recipe',
+            component: () => import('@/components/RecipeGrid.vue')
+        },
+        {
             path: '/auth/error',
             name: 'error',
             component: () => import('@/views/pages/auth/Error.vue')

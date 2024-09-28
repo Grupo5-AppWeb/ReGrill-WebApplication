@@ -21,7 +21,7 @@ export class Recipe {
 }
 
 export class Ingredient {
-    constructor(name = '', quantity = '', cost = '') {
+    constructor(name = '', quantity = '', cost = 0) {
         this.name = name;
         this.quantity = quantity;
         this.cost = cost;

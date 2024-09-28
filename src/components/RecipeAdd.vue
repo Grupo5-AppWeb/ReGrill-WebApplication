@@ -1,5 +1,5 @@
 <script>
-import {RecetApiService} from "@/restaurant/service/recet-api.service";
+import {RecetApiService} from "@/services/service/recet-api.service";
 
 export default {
     name: "submitRecipe",
@@ -14,7 +14,7 @@ export default {
     },
     methods: {
         addIngredient() {
-            this.ingredients.push({ name: "", quantity: "", cost: "" }); // Add a new ingredient
+            this.ingredients.push({ name: "", quantity: "", cost: 0 }); // Add a new ingredient
         },
         async submitRecipe() {
             if (this.name && this.category && this.description && this.ingredients.length > 0  && this.image) {
@@ -63,7 +63,7 @@ export default {
             <div class="form-field" v-for="(ingredient, index) in ingredients" :key="index">
                 <input class="textbox" type="text" v-model="ingredient.name" placeholder="Nombre del ingrediente" />
                 <input class="textbox" type="text" v-model="ingredient.quantity" placeholder="Cantidad" />
-                <input class="textbox" type="text" v-model="ingredient.cost" placeholder="Costo" />
+                <input class="textbox" type="number" v-model="ingredient.cost" placeholder="Costo" />
             </div>
             <button @click="addIngredient">Añadir ingrediente</button>
             <div class="form-field">
