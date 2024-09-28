@@ -10,7 +10,7 @@ const { onMenuToggle, toggleDarkMode, isDarkTheme } = useLayout();
             <button class="layout-menu-button layout-topbar-action" @click="onMenuToggle">
                 <i class="pi pi-bars"></i>
             </button>
-            <router-link to="/supplier/dashboard" class="layout-topbar-logo">
+            <router-link to="/" class="layout-topbar-logo">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
                     <defs>
                         <clipPath id="imagebot_5">
