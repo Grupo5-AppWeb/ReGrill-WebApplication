@@ -45,10 +45,7 @@ const products = ref(null);
 const chartData = ref(null);
 const chartOptions = ref(null);
 
-const items = ref([
-    { label: 'Add New', icon: 'pi pi-fw pi-plus' },
-    { label: 'Remove', icon: 'pi pi-fw pi-trash' }
-]);
+
 
 
 
