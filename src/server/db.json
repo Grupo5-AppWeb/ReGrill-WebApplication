@@ -51,5 +51,171 @@
                 }
             ]
         }
+    ],
+    "recipes": [
+        {
+            "id": 1,
+            "name": "Octopus and Shrimp Ceviche with Yellow Chili Tiger's Milk",
+            "category": "Appetizers",
+            "description": "A fresh ceviche with octopus and shrimp, served with a creamy and spicy tiger's milk.",
+            "ingredients": [
+                {
+                    "name": "Octopus",
+                    "quantity": "200 grams",
+                    "cost": "10 USD"
+                },
+                {
+                    "name": "Shrimp",
+                    "quantity": "100 grams",
+                    "cost": "7 USD"
+                },
+                {
+                    "name": "Yellow Chili",
+                    "quantity": "2 units",
+                    "cost": "1 USD"
+                }
+            ],
+            "image": "https://casualepicure.com/wp-content/uploads/2023/07/octopus-ceviche-11.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Seafood Paella",
+            "category": "Main Course",
+            "description": "A traditional Spanish paella with a mix of fresh seafood.",
+            "ingredients": [
+                {
+                    "name": "Rice",
+                    "quantity": "500 grams",
+                    "cost": "3 USD"
+                },
+                {
+                    "name": "Mussels",
+                    "quantity": "200 grams",
+                    "cost": "5 USD"
+                },
+                {
+                    "name": "Shrimps",
+                    "quantity": "150 grams",
+                    "cost": "6 USD"
+                }
+            ],
+            "image": "https://themediterraneanchick.com/wp-content/uploads/2020/09/IMG_0825-1-scaled.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Carnitas Tacos",
+            "category": "Fast Food",
+            "description": "Traditional Mexican tacos with slow-cooked pork.",
+            "ingredients": [
+                {
+                    "name": "Tortillas",
+                    "quantity": "10 units",
+                    "cost": "2 USD"
+                },
+                {
+                    "name": "Pork",
+                    "quantity": "300 grams",
+                    "cost": "5 USD"
+                },
+                {
+                    "name": "Cilantro",
+                    "quantity": "50 grams",
+                    "cost": "0.5 USD"
+                }
+            ],
+            "image": "https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2020/04/Carnitas-Tacos-main.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Tomato Soup",
+            "category": "Soups",
+            "description": "A creamy and comforting soup made with fresh tomatoes and basil.",
+            "ingredients": [
+                {
+                    "name": "Tomatoes",
+                    "quantity": "4 units",
+                    "cost": "3 USD"
+                },
+                {
+                    "name": "Basil",
+                    "quantity": "20 grams",
+                    "cost": "1 USD"
+                },
+                {
+                    "name": "Cream",
+                    "quantity": "100 ml",
+                    "cost": "2 USD"
+                }
+            ],
+            "image": "https://cdn.loveandlemons.com/wp-content/uploads/2023/01/tomato-soup-recipe.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Chocolate Brownies",
+            "category": "Desserts",
+            "description": "Sweet and fluffy brownies made with dark chocolate and walnuts.",
+            "ingredients": [
+                {
+                    "name": "Dark Chocolate",
+                    "quantity": "200 grams",
+                    "cost": "4 USD"
+                },
+                {
+                    "name": "Flour",
+                    "quantity": "150 grams",
+                    "cost": "1 USD"
+                },
+                {
+                    "name": "Walnuts",
+                    "quantity": "50 grams",
+                    "cost": "2 USD"
+                }
+            ],
+            "image": "https://img.taste.com.au/kdMbjArS/taste/2010/01/chocolate-brownies-118925-2.jpg"
+        }
+    ],
+    "shrinkageHistory": [
+        {
+            "date": "02/20/2023",
+            "ingredient": "Raspberry",
+            "lostQuantity": "One can",
+            "reason": "Expiration",
+            "productionCost": "Email"
+        },
+        {
+            "date": "03/15/2023",
+            "ingredient": "Lettuce",
+            "lostQuantity": "500 grams",
+            "reason": "Poor storage",
+            "productionCost": "Password"
+        },
+        {
+            "date": "04/28/2023",
+            "ingredient": "Chicken",
+            "lostQuantity": "2 kilograms",
+            "reason": "Incorrect preparation",
+            "productionCost": "Email"
+        },
+        {
+            "date": "05/10/2023",
+            "ingredient": "Flour",
+            "lostQuantity": "1 bag",
+            "reason": "Cross-contamination",
+            "productionCost": "Password"
+        },
+        {
+            "date": "06/05/2023",
+            "ingredient": "Cheese",
+            "lostQuantity": "200 grams",
+            "reason": "Overstock",
+            "productionCost": "Octopus and Shrimp Ceviche with Yellow Chili Tiger's Milk"
+        },
+        {
+            "date": "07/18/2023",
+            "ingredient": "Tomato",
+            "lostQuantity": "3 units",
+            "reason": "Transport damage",
+            "productionCost": "Seafood Paella"
+        }
     ]
 }
