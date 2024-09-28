@@ -7,7 +7,7 @@ const model = ref([
     {
         label: 'Menu',
         items: [
-            { label: 'Dashboard', icon: 'pi pi-fw pi-home', to: '/supplier/dashboard' },
+            { label: 'Dashboard', icon: 'pi pi-fw pi-home', to: '/' },
             { label: 'Order List', icon: 'pi pi-fw pi-table', to: '/supplier/orderlist' },
             { label: 'Notifications', icon: 'pi pi-fw pi-bell', to: '/supplier/notifications' },
             { label: 'Profile', icon: 'pi pi-fw pi-user', to: '/supplier/profile' },
