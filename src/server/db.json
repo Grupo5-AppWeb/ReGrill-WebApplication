@@ -51,5 +51,21 @@
                 }
             ]
         }
+    ],
+    "users": [
+        {
+            "id": 1,
+            "name": "John",
+            "lastname": "Doe",
+            "email": "johnD@example.com",
+            "password": "johndoe2024"
+        },
+        {
+            "id": 2,
+            "name": "Mary",
+            "lastname": "Jane",
+            "email": "maryJ@example.com",
+            "password": "maryjane2024"
+        }
     ]
 }

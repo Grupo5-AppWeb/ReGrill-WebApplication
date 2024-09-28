@@ -6,6 +6,8 @@ import Aura from '@primevue/themes/aura';
 import PrimeVue from 'primevue/config';
 import ConfirmationService from 'primevue/confirmationservice';
 import ToastService from 'primevue/toastservice';
+import Toolbar from 'primevue/toolbar';
+import Button from 'primevue/button';
 
 import '@/assets/styles.scss';
 import '@/assets/tailwind.css';
@@ -23,5 +25,8 @@ app.use(PrimeVue, {
 });
 app.use(ToastService);
 app.use(ConfirmationService);
+
+app.component('pv-button', Button)
+app.component('pv-toolbar', Toolbar)
 
 app.mount('#app');
