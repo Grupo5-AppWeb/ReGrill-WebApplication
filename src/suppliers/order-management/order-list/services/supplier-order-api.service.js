@@ -1,5 +1,5 @@
 
-import {SupplierOrder} from '@/services/model/supplier-order.entity';
+import {SupplierOrder} from '@/suppliers/order-management/order-list/model/supplier-order.entity';
 import axios from 'axios';
 
 export class SupplierOrderApiService{

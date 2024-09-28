@@ -1,6 +1,6 @@
 <script setup>
 import {  onMounted, ref } from 'vue';
-import { SupplierOrderApiService } from '@/services/service/supplier-order-api.service';
+import { SupplierOrderApiService } from '@/suppliers/order-management/order-list/services/supplier-order-api.service';
 
 const expandedRows = ref([]);
 const orders = ref([]);
@@ -29,7 +29,6 @@ const onRowCollapse = (event) => {
                    @rowExpand="onRowExpand" @rowCollapse="onRowCollapse" tableStyle="min-width: 60rem">
             <Column expander style="width: 5rem" />
             <Column field="id" header="ID"></Column>
-            <Column field="supplierId" header="Supplier ID"></Column>
             <Column field="orderDate" header="Order Date"></Column>
             <Column field="deliveryDate" header="Delivery Date"></Column>
             <Column field="status" header="Status"></Column>
@@ -41,11 +40,11 @@ const onRowCollapse = (event) => {
                         <Column field="name" header="Name" ></Column>
                         <Column field="quantity" header="Quantity" ></Column>
                         <Column field="price" header="Price" ></Column>
-
-
                     </DataTable>
                 </div>
+
             </template>
+
         </DataTable>
     </div>
 </template>
